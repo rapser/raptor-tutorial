@@ -18,10 +18,19 @@ export default {
             next
             prev
           }
+          results {
+            id
+            name
+            air_date
+            episode
+            created
+          }
         }
       }
       `
-    );
+    ).then(data => {
+        console.log(data)
+    });
   },
 };
 </script>
